@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title> 글자와 관련된 속성 알아보기 </title>
+	<meta charset="UTF-8" />
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Single+Day&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap');
+
+		#box1 h2 {
+			font-family: "Inconsolata", monospace;
+			font-optical-sizing: auto;
+			font-weight: weight;
+			font-style: normal;
+			font-variation-settings:
+				"wdth" 100;
+		}
+
+		#box1 p {
+			font-family: "Inconsolata", monospace;
+			font-optical-sizing: auto;
+			font-weight: weight;
+			font-style: normal;
+			font-variation-settings:
+				"wdth" 100;
+			color: rgb(183, 54, 212);
+		}
+		#box2 h2{
+			font-style: italic;
+			color: blue;
+		}
+		#box2 p{font-variant: small-caps;}
+		#box3 h2{font: 3em Arial}
+		#box3 p{font: small-caps italic 30px "Times New Roman"}
+	</style>
+</head>
+
+<body>
+	<div id="box1">
+		<h2>font-family, font-size, font-weight</h2>
+		<p>Well done is better than well said.</p>
+	</div>
+	<div id="box2">
+		<h2>font-style, font-variant, color</h2>
+		<p>Seeing much, suffering much, and studying much, are the three pillars of learning. </p>
+	</div>
+	<div id="box3">
+		<h2>font</h2>
+		<p>Education is a progressive discovery of our own ignorance. </p>
+	</div>
+</body>
+
+</html>

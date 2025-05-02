@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body {
+            margin: 50px;
+        }
+        h1{text-align: center;}
+        form{width: 500px; margin: 10px auto; }
+        legend{display: none;}
+    </style>
+</head>
+
+<body>
+    <h1><img src="./../images/title_memberlogin.gif" alt=""></h1>
+    <form action="#">
+        <fieldset>
+            <legend>member login</legend>
+            <dl>
+                <dt>
+                    <label for="uid"></label>
+                    <input type="text" id="uid" autofocus placeholder="아이디" required>
+                    <label for="path"></label>
+                    <select name="path" id="path">
+                        <option>---------</option>
+                        <option value="search">검색</option>
+                        <option value="sns">SNS</option>
+                        <option value="etc">기타</option>
+                    </select>
+                </dt>
+                <dt>
+                    <label for="uid2"></label>
+                    <input type="" id="uid2" required><img src="./../images/login.gif" alt="">
+                </dt>
+                <dt>
+                    <input type="checkbox" id="p1" name="mail" >
+                    <label for="p1">아이디 저장</label>
+                </dt>
+            </dl>
+
+            <p>
+                <input type="text" value="아이디">
+                <select name="selecr" id="select">
+                    <option>-------</option>
+                    <option value="naver.com">naver.com</option>
+                </select>
+
+            </p>
+            <p>
+                <input type="password" name="pwd">
+                <input type="image" src="./../images/login.gif" alt="button">
+            </p>
+            <p>
+                <input type="checkbox" for="check" id="">
+                <label for="check">아이디 저장</label>
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

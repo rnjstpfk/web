@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{width: 500px; height:200px; margin: 20px auto;}
+        td,th{border: 3px solid #ccc}
+        td{text-align: center;}
+        h1{text-align: center;}
+       /*  th:nth-child(1){background-color: #f8d7da;}
+        th:nth-child(2){background-color: #f8d7da;}
+        th:nth-child(3){background-color: #f8d7da;}
+        th:nth-child(4){background-color: #f8d7da;} */
+        th{background-color: rgb(182, 220, 220);}
+        tfoot td{background-color: #ccbbf4; text-align: left; padding-left: 20px;}
+    </style>
+</head>
+<body>
+    <h1><a href="#"><img src="./../images/title_recipe.gif" alt="레시피"></a></h1>
+    <hr>
+
+    <table>
+        <caption>레시피 재료</caption>
+        <!-- <colgroup>  
+        <col style="background-color: #9c4040;">
+            <col>
+          <col span="2" style="width: 150px;"> -->
+           <!--  </colgroup> -->
+             
+        <thead>
+            <tr>
+                <th>재료</th>
+                <th>첨가량</th>
+                <th>48시간</th>
+                <th>대체재료</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="5">수상층</td>
+                <td>로즈마리 추출물</td>
+                <td>30g</td>
+                <td rowspan="3">증류수</td>
+            </tr>
+            <tr>
+                <td>네츨추출물</td>
+                <td>30g</td>
+            </tr>
+            <tr>
+                <td>증류수</td>
+                <td>90g</td>
+            </tr>
+            <tr>
+                <td>폴리쿼터</td>
+                <td>1.5g</td>
+                <td>쟁탄검</td>
+            </tr>
+            <tr>
+                <td>글리세린</td>
+                <td>10g</td>
+                <td>히아루론산 10g</td>
+            </tr>
+            <tr>
+                <td rowspan="3">계면 활성제</td>
+                <td>LES/CDE</td>
+                <td>108g/10g</td>
+                <td>CDE+LES</td>
+            </tr>
+            <tr>
+                <td>코코베타인</td>
+                <td>5g</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>애플 계면 활정제</td>
+                <td>10g</td>
+                <td>올리브 계면 활성제</td>
+    
+        </tbody>
+        </tr>
+        <tfoot>
+            <tr>   
+                <td colspan="4">좋은 향을 위해서라면 엘라스틴 추천</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <hr>
+    <form>
+        <fieldset>
+            <label>아이디: <input type="text" id="user_id" size="10"></label>
+            <label>비밀번호: <input type="password" id="user_pw" size="10"></label>
+            <input type="submit" value="로그인">
+        </fieldset>
+        <fieldset>
+            <legend>배송정보</legend>
+        <ul>
+            <li>
+                <label for="user-name">이름</label>
+                <input type="text" id="user-name">
+            </li>
+            <li>
+                <label for="addr">배송주소</label>
+                <input type="text" id="addr">
+            </li>
+            <li>
+                <label for="mail">이메일</label>
+                <input type="text" id="mail">
+            </li>
+            <li>
+                <label for="phone">연락처</label>
+                <input type="text" id="phone">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>상품 선택</legend>
+        <p><b>주문할 상품을 선택해 주세요</b></p>
+        <ul>
+            <li>
+                <label><input type="checkbox" name="prod" value="s_3">선물용 3kg</label>
+            </li>
+            <li>
+                <label><input type="checkbox" name="prod" value="s_5">선물용 5kg</label>
+            </li>
+            <li>
+                <label><input type="checkbox" name="prod" value="f_3">가정용 3kg</label>
+            </li>
+            <li>
+                <label><input type="checkbox" name="prod" value="s_5">가정용 5kg</label>
+            </li>
+        </ul>
+        <p><b>포장선택</b></p>
+        <ul>
+            <li>
+                <label><input type="radio" name="gift" value="yes">선물포장</label>
+            </li>
+            <li>
+                <label><input type="radio" name="gift" value="no">선물포장 안 함</label>
+            </li>
+        </ul>
+    </fieldset>
+    <hr>
+
+    <fieldset>
+        <legend>사용자 정보</legend>
+        
+    </fieldset>
+    </form>
+</body>
+</html>
